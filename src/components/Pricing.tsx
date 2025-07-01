@@ -21,10 +21,10 @@ const Pricing: React.FC = () => {
                 Most Popular
               </div>
               <h3 className="font-serif text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-                One Year Subscription
+                One Time purchase
               </h3>
               <div className="mb-6">
-                <span className="text-3xl font-bold text-gray-800">$99</span>
+                <span className="text-3xl font-bold text-gray-800">$50</span>
                 <span className="text-gray-600 ml-1">USD</span>
               </div>
               <p className="text-gray-600 mb-8">
@@ -34,7 +34,7 @@ const Pricing: React.FC = () => {
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-burgundy mr-2 flex-shrink-0 mt-0.5" />
-                  <span>Weekly questions for one year</span>
+                  <span>Weekly questions for one year or one big question and answer</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-burgundy mr-2 flex-shrink-0 mt-0.5" />
@@ -42,7 +42,7 @@ const Pricing: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-burgundy mr-2 flex-shrink-0 mt-0.5" />
-                  <span>One hardcover keepsake book</span>
+                  <span>One free hardcover keepsake book</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="h-5 w-5 text-burgundy mr-2 flex-shrink-0 mt-0.5" />
@@ -53,6 +53,12 @@ const Pricing: React.FC = () => {
               <button className="w-full bg-burgundy hover:bg-burgundy-dark text-white font-semibold py-3 px-8 rounded-full transition-colors">
                 Give as a Gift
               </button>
+
+              {/* <button
+                // onClick={nextTestimonial}
+                className="p-2 rounded-full bg-white shadow-sm hover:bg-gray-100 transition-colors"
+                aria-label="Next testimonial"
+              ></button> */}
             </div>
             <div className="md:w-1/2 bg-burgundy-light p-8 md:p-12 flex flex-col justify-center">
               <h4 className="font-serif text-xl text-burgundy font-semibold mb-4">
