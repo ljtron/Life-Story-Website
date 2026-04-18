@@ -1,27 +1,17 @@
-import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Testimonials from './components/Testimonials';
-import Features from './components/Features';
-import Pricing from './components/Pricing';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/HomePage';
+import CreateBook from './pages/CreateBook';
+
 
 function App() {
   return (
-    <div className="font-sans text-gray-800 bg-cream min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <HowItWorks />
-        <Features />
-        <Testimonials />
-        <Pricing />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/createBook" element={<CreateBook />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/logo';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         <div className="flex items-center">
           <div className="mr-2" dangerouslySetInnerHTML={{ __html: logo }} />
-          <span className="text-burgundy font-serif text-xl font-semibold">StoryWorth</span>
+          <span className="text-burgundy font-serif text-xl font-semibold">The story of ME</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -129,9 +130,11 @@ const Header: React.FC = () => {
                 </a>
               </li>
               <li className="pt-2">
-                <button className="w-full bg-burgundy hover:bg-burgundy-dark text-white font-medium py-2 px-6 rounded-full transition-colors">
-                  Give as a Gift
-                </button>
+                <Link to="/createBook">
+                  <button className="w-full bg-burgundy hover:bg-burgundy-dark text-white font-medium py-2 px-6 rounded-full transition-colors">
+                    Give as a Gift
+                  </button>
+                </Link>
               </li>
             </ul>
           </nav>

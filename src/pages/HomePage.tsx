@@ -12,16 +12,16 @@ import Footer from '../components/Footer';
 const HomePage = () => {
     return(
         <div className="font-sans text-gray-800 bg-cream min-h-screen">
-            <Header />
-            <main>
-                <Hero />
-                <HowItWorks />
-                <Features />
-                <Testimonials />
-                <Pricing />
-                <FAQ />
-            </main>
-            <Footer />
+        <Header />
+        <main>
+            <Hero />
+            <HowItWorks />
+            <Features />
+            <Testimonials />
+            <Pricing />
+            <FAQ />
+        </main>
+        <Footer />
         </div>
     )
 }
